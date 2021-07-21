@@ -90,7 +90,7 @@ bool is_winner()
     return winner;
 }
 
-bool filled_up()
+bool is_filled()
 {
     bool filled = true;
 
@@ -145,6 +145,11 @@ void set_position()
 }
 
 }
+
+
+
+
+
 
 
 
