@@ -158,6 +158,15 @@ void update_board() {
 }
 
 
+void change_player() {
+    if (player == 1) {
+        player++;
+    }else{
+        player--;
+    }
+}
+
+
 
 
 
