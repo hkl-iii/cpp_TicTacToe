@@ -3,6 +3,8 @@
 
 void introduction();
 bool is_winner();
+bool is_filled();
+void draw();
 
 
 #endif
