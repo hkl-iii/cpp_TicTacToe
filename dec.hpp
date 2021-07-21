@@ -8,5 +8,6 @@ void draw();
 void set_position();
 void update_board();
 void change_player();
+void end_game();
 
 #endif
