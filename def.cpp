@@ -90,7 +90,7 @@ bool is_winner()
     return winner;
 }
 
-bool is_filled()
+bool filled_up()
 {
     bool filled = true;
 
@@ -163,6 +163,14 @@ void change_player() {
         player++;
     }else{
         player--;
+    }
+}
+
+
+
+void take_turn() {
+    if(is_winner() && !filled_up()) {
+
     }
 }
 

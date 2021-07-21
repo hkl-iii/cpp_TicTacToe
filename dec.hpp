@@ -3,7 +3,7 @@
 
 void introduction();
 bool is_winner();
-bool is_filled();
+bool filled_up();
 void draw();
 void set_position();
 void update_board();
