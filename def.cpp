@@ -107,7 +107,7 @@ bool filled_up()
 
 
 
-
+// show board
 void draw()
 {
   cout<<  "     |     |      \n";
@@ -169,11 +169,29 @@ void change_player() {
 
 
 void take_turn() {
-    if(is_winner() && !filled_up()) {
-
+    if(is_winner() && !filled_up()) 
+    {
+        // invoking the functions
+        set_position();
+        update_board();
+        change_player();
+        draw();
     }
 }
 
+
+
+void end_game() 
+{
+    if(is_winner() && !filled_up())
+    {
+        cout<< "There is a winner!"<< endl;
+    }
+    else if(filled_up())
+    {
+        cout<< "There is a tie!"<< endl;
+    }
+}
 
 
 
