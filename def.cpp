@@ -39,10 +39,16 @@ void introduction()
 bool is_winner() 
 { bool winner = false;
   //checking the rows
-  if((board[0]==board[1]) && (board[1]==board[2]) && board[0] != " ")
-  {
-      winner = true;
+  if((board[0] == board[1]) && (board[1] == board[2]) && board[0] != " ") {
+    winner = true;
   }
+  else if ((board[3] == board[4]) && (board[4] == board[5]) && board[3] != " ") {
+    winner = true;
+  }
+  else if ((board[6] == board[7]) && (board[7] == board[8]) && board[6] != " ") {
+    winner = true;
+  }
+
 
 
   //checking the columns
