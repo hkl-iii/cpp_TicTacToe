@@ -1,5 +1,5 @@
-#ifndef DEC_HPP
-#define DEC_HPP
+#ifndef DEC_H
+#define DEC_H
 
 void introduction();
 bool is_winner();
