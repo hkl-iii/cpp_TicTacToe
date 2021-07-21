@@ -89,3 +89,18 @@ bool is_winner()
 
     return winner;
 }
+
+bool filled_up()
+{
+    bool filled = true;
+
+    for(int i = 0; i<9; i++)
+    {
+        if(board[i] == " ")
+        {
+            filled = false;
+        }
+    }
+
+    return filled;
+}

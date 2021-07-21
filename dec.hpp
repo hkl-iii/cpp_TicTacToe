@@ -2,6 +2,7 @@
 #define DEC_HPP
 
 void introduction();
+bool is_winner();
 
 
 #endif
