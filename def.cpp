@@ -11,7 +11,7 @@ void introduction()
     cout<<"Press [Enter] to begin: ";
     getchar(); //haults the screen
     cout<<"\n";
-    
+
     cout<<"\n";
   cout<<"***********\n";
   cout<<"Tic-Tac-Toe\n";
@@ -38,7 +38,8 @@ void introduction()
 
 
 bool is_winner() 
-{ bool winner = false;
+{ 
+  bool winner = false;
   //checking the rows
   
   if((board[0] == board[1]) && (board[1] == board[2]) && board[0] != " ") 
@@ -154,11 +155,11 @@ void set_position()
 void update_board() {
 
     if (player % 2 == 1) {
-        board[position - 1] = "x";  //1-9     0-8
+        board[position - 1] = "X";  //1-9     0-8
     }
     else
     {
-        board[position - 1] = "o";
+        board[position - 1] = "O";
     }
 }
 
@@ -175,7 +176,7 @@ void change_player() {
 
 
 void take_turn() {
-    while(is_winner() && !filled_up()) 
+    while(!is_winner() && !filled_up()) 
     {
         // invoking the functions
         set_position();
