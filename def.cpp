@@ -148,6 +148,17 @@ void set_position()
 
 
 
+void update_board() {
+
+    if (player % 2 == 1) {
+        board[position - 1] = "x";  //1-9     0-8
+    }else{
+        board[position - 1] = "o";
+    }
+}
+
+
+
 
 
 
