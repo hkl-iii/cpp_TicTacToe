@@ -90,6 +90,8 @@ bool is_winner()
     return winner;
 }
 
+
+
 bool filled_up()
 {
     bool filled = true;
@@ -152,7 +154,9 @@ void update_board() {
 
     if (player % 2 == 1) {
         board[position - 1] = "x";  //1-9     0-8
-    }else{
+    }
+    else
+    {
         board[position - 1] = "o";
     }
 }
@@ -161,7 +165,8 @@ void update_board() {
 void change_player() {
     if (player == 1) {
         player++;
-    }else{
+    }
+    else{
         player--;
     }
 }
@@ -183,7 +188,7 @@ void take_turn() {
 
 void end_game() 
 {
-    if(is_winner() && !filled_up())
+    if(is_winner())
     {
         cout<< "There is a winner!"<< endl;
     }
