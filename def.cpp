@@ -10,6 +10,7 @@ void introduction()
 {
     cout<<"Press [Enter] to begin: ";
     getchar(); //haults the screen
+    cout<<"\n";
     
     cout<<"\n";
   cout<<"***********\n";
