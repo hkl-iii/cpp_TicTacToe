@@ -169,7 +169,7 @@ void change_player() {
 
 
 void take_turn() {
-    if(is_winner() && !filled_up()) 
+    while(is_winner() && !filled_up()) 
     {
         // invoking the functions
         set_position();
