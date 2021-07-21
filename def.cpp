@@ -1,5 +1,5 @@
 #include <iostream>
-#include "dec.hpp"
+#include "dec.h"
 //globally defined
 using namespace std;
 string board[9] = {" ", " ", " ", " ", " ", " ", " ", " ", " "};
